@@ -1,0 +1,59 @@
+.answer{border-top:2px solid {color:background}}
+
+.as{
+    display:flex;
+    overflow:hidden;
+    margin-bottom:10px;
+    align-items:center;
+    border-bottom:2px solid {color:background};
+}
+
+.as::before{
+    width:65px;
+    height:65px;
+    display:flex;
+    font-size:1.3em;
+    margin-right:20px;
+    align-items:center;
+    font-family:'feather';
+    justify-content:center;
+    color:{color:title};
+    border-right:2px solid {color:background};
+}
+
+.question .as::before{
+    content:'\e88a';
+    background:{color:sub accent};
+}
+
+.answer .as::before{
+    content:'\e890';
+    background:{color:accent};
+}
+
+.answer ~ .answer .as::before{
+    content:'\e8e7';
+    background:inherit;
+}
+
+.as img{
+    width:35px;
+    height:35px;
+    margin-right:20px;
+    border-radius:100%;
+}
+
+.as span{
+    font-weight:600;
+    text-transform:lowercase;
+    color:{color:sub text};
+}
+
+.as a{color:{color:sub text};}
+
+.question .tex,
+.answer .tex{
+    padding:30px;
+    border-radius:5px;
+    background:{color:posts};
+}
