@@ -1,59 +1,65 @@
-.answer{border-top:2px solid {color:background}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't increase width */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-data" method="POST">
+        <h2>Submit Your Information</h2>
 
-.as{
-    display:flex;
-    overflow:hidden;
-    margin-bottom:10px;
-    align-items:center;
-    border-bottom:2px solid {color:background};
-}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-.as::before{
-    width:65px;
-    height:65px;
-    display:flex;
-    font-size:1.3em;
-    margin-right:20px;
-    align-items:center;
-    font-family:'feather';
-    justify-content:center;
-    color:{color:title};
-    border-right:2px solid {color:background};
-}
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-.question .as::before{
-    content:'\e88a';
-    background:{color:sub accent};
-}
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
 
-.answer .as::before{
-    content:'\e890';
-    background:{color:accent};
-}
-
-.answer ~ .answer .as::before{
-    content:'\e8e7';
-    background:inherit;
-}
-
-.as img{
-    width:35px;
-    height:35px;
-    margin-right:20px;
-    border-radius:100%;
-}
-
-.as span{
-    font-weight:600;
-    text-transform:lowercase;
-    color:{color:sub text};
-}
-
-.as a{color:{color:sub text};}
-
-.question .tex,
-.answer .tex{
-    padding:30px;
-    border-radius:5px;
-    background:{color:posts};
-}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
