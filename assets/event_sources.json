@@ -60,7 +60,7 @@
     },
     "googleCalendar": [
         {
-            "name": "rva.rip Manually Added Events",
+            "name": "covidsaferdmv manually added events",
             "googleCalendarId": "55ec555d0c938cc38f467e2ef8846155639a6f9123688f704e37db09a7abce9a@group.calendar.google.com",
             "filters": [
                 [["market","commercial"], "Market", ["title","description"]],
