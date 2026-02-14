@@ -56,15 +56,12 @@
         ],
         "eventApiToGrab": [
             "/api/events/googleCalendar",
-            "/api/events/squarespace",
-            "/api/events/elfsight",
-            "/api/events/libcal"
           ]
     },
     "googleCalendar": [
         {
             "name": "rva.rip Manually Added Events",
-            "googleCalendarId": "1c16b938a56fea0342068f59730a90d90bec79d49d44c6fcc0b46915705b8cea@group.calendar.google.com",
+            "googleCalendarId": "55ec555d0c938cc38f467e2ef8846155639a6f9123688f704e37db09a7abce9a@group.calendar.google.com",
             "filters": [
                 [["market","commercial"], "Market", ["title","description"]],
                 ["palestine", "🇵🇸", ["title","description"]],
